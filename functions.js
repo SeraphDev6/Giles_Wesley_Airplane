@@ -91,16 +91,16 @@ function drawEnemyBullets(){
     document.getElementById("not-friend-bullets").innerHTML=content;
 }
 document.onkeydown=function(e){
-    if(e.key=="ArrowLeft"&&player.left>=10){
+    if((e.key=="ArrowLeft"||e.key=="a")&&player.left>=10){
         player.left-=10;
     }
-    if(e.key=="ArrowRight"&&player.left<=820){
+    if((e.key=="ArrowRight"||e.key=="d")&&player.left<=820){
         player.left+=10;
     }
-    if(e.key=="ArrowUp"&&player.top>=450){
+    if((e.key=="ArrowUp"||e.key=="w")&&player.top>=450){
         player.top-=10;
     }
-    if(e.key=="ArrowDown"&&player.top<=610){
+    if((e.key=="ArrowDown"||e.key=="s")&&player.top<=610){
         player.top+=10;
     }
     if(e.key==" "&&player.canFire){
