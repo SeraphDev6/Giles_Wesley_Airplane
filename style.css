@@ -1,0 +1,36 @@
+#ocean{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("img/ocean.jpg");
+    width: 900px;
+    height: 700px;
+}
+.player{
+    position: absolute;
+    background-image: url("img/player.png");
+    width: 70px;
+    height: 75px;
+}
+.enemy{
+    position: absolute;
+    background-image: url("img/enemy.png");
+    width: 70px;
+    height: 75px;
+}
+.friend-bullet{
+    position: absolute;
+    background-color:limegreen;
+    border-radius: 35%;
+    height: 20px;
+    width: 10px;
+    z-index: 100;
+}
+.not-friend-bullet{
+    position: absolute;
+    background-color:crimson;
+    border-radius: 35%;
+    height: 20px;
+    width: 10px;
+    z-index: 100;
+}
